@@ -27,10 +27,10 @@ def multiply_test():
 # tests if multiply() works for zero, positive numbers and negative numbers
 def divide_test():
     basic_test(0, 5, divide, 0)
-    basic_test(10, 5, multiply, 2)
-    basic_test(-10, 5, multiply, -2)
-    basic_test(-5, -10, multiply, 0.5)
-    basic_test(5, 0, multiply, ZeroDivisionError)
+    basic_test(10, 5, divide, 2)
+    basic_test(-10, 5, divide, -2)
+    basic_test(-5, -10, divide, 0.5)
+    basic_test(5, 0, divide, ZeroDivisionError)
 
 
 if __name__ == "__main__":
