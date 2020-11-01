@@ -18,11 +18,11 @@ def calculate():
         nums.append(float(input("Enter a number: ")))
 
     # This actually calculates result and prints it.
-    print("\nThe result is {}".format(
-        use_function(user_choice, nums)
+    print('''The result is {}'''.format(
+        use_function(user_choice, *nums)
     ))
 
-    #
+    # Asks users if they want to do more calculations.
     again()
 
 
