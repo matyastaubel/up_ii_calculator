@@ -1,4 +1,4 @@
-# Python program for simple calculator
+# Basic mathematical operations
 
 # Function to add two numbers
 def add(num1, num2):
