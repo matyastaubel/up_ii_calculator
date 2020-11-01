@@ -2,7 +2,7 @@
 
 # Method for testing methods with two numbers on input.
 def unit_test(expected, function, *args):
-    test_name = "{} {}".format(function, *args)
+    test_name = "{} {}".format(function, [*args])
     result = function(*args)
     assert_result(result, expected, test_name)
 
