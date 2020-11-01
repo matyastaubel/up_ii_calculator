@@ -1,36 +1,36 @@
 from src.BasicFunctions import add, subtract, multiply, divide
-from tests.TestCore import basic_test
+from tests.TestCore import unit_test
 
 
 # tests if add() works for zero, positive numbers and negative numbers
 def add_test():
-    basic_test(10.6, 5.4, add, 16)
-    basic_test(-10, 5, add, -5)
-    basic_test(0, 5, add, 5)
+    unit_test(16, add, 10.4, 5.6)
+    unit_test(-5, add, -10, 5)
+    unit_test(5, add, 5, 0)
 
 
 # tests if subtract() works for zero, positive numbers and negative numbers
 def subtract_test():
-    basic_test(10.4, 5.4, subtract, 5)
-    basic_test(-10, 5, subtract, -15)
-    basic_test(0, 5, subtract, -5)
+    unit_test(5, subtract, 10.4, 5.4)
+    unit_test(-15, subtract, -10, 5)
+    unit_test(-5, subtract, -5, 0)
 
 
 # tests if multiply() works for zero, positive numbers and negative numbers
 def multiply_test():
-    basic_test(0, 5, multiply, 0)
-    basic_test(5, 5, multiply, 25)
-    basic_test(-5, 5, multiply, -25)
-    basic_test(-5, -5, multiply, 25)
+    unit_test(0, multiply, 0, 5)
+    unit_test(25, multiply, 5, 5)
+    unit_test(-25, multiply, -5, 5)
+    unit_test(25, multiply, -5, -5)
 
 
 # tests if multiply() works for zero, positive numbers and negative numbers
 def divide_test():
-    basic_test(0, 5, divide, 0)
-    basic_test(10, 5, divide, 2)
-    basic_test(-10, 5, divide, -2)
-    basic_test(-5, -10, divide, 0.5)
-    basic_test(5, 0, divide, ZeroDivisionError)
+    unit_test(0, divide, 0, 5)
+    unit_test(2, divide, 10, 5)
+    unit_test(-2, divide, -10, 5)
+    unit_test(0.5, divide, -5, -10)
+    unit_test(ZeroDivisionError, divide, 5, 0)
 
 
 if __name__ == "__main__":

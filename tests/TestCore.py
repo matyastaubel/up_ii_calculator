@@ -1,9 +1,9 @@
 
 
 # Method for testing methods with two numbers on input.
-def basic_test(num1, num2, function, expected):
-    test_name = "{} {}, {}".format(function, num1, num2)
-    result = function(num1, num2)
+def unit_test(expected, function, *args):
+    test_name = "{} {}".format(function, *args)
+    result = function(*args)
     assert_result(result, expected, test_name)
 
 
