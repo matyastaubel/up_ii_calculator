@@ -4,14 +4,14 @@ from tests.TestCore import basic_test
 
 # tests if add() works for zero, positive numbers and negative numbers
 def add_test():
-    basic_test(10, 5, add, 15)
+    basic_test(10.6, 5.4, add, 16)
     basic_test(-10, 5, add, -5)
     basic_test(0, 5, add, 5)
 
 
 # tests if subtract() works for zero, positive numbers and negative numbers
 def subtract_test():
-    basic_test(10, 5, subtract, 5)
+    basic_test(10.4, 5.4, subtract, 5)
     basic_test(-10, 5, subtract, -15)
     basic_test(0, 5, subtract, -5)
 
