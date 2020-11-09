@@ -14,7 +14,7 @@ def subtract_test():
     unit_test(5, subtract, 10.4, 5.4)
     unit_test(-15, subtract, -10, 5)
     unit_test(-5, subtract, -5, 0)
-
+    unit_test(4, subtract, 10, 6)
 
 # tests if multiply() works for zero, positive numbers and negative numbers
 def multiply_test():
