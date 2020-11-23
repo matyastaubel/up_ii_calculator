@@ -2,7 +2,9 @@
 
 # Returns both result of integer division and modulo
 def int_division(num1, num2):
-    return NotImplemented
+    div=num1 // num2
+    mod= num1 % num2
+    return [div, mod]
 
 
 # Returns factorial of given number
