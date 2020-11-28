@@ -9,7 +9,7 @@ def int_division(num1, num2):
 
 # Returns factorial of given number
 def factorial(num):
-    return NotImplemented
+    return num * factorial(num - 1)
 
 
 # Returns all solutions of given quadratic equation
